@@ -14,7 +14,7 @@
     "installer": {
         "script": ["python3 $dir/rez-$version/install.py $dir/INSTALL",
                    "shim $dir/INSTALL/Scripts/rez/rez.exe $global rez3"],
-        "keep": "false"
+        "keep": false
     },
     "pre_install": [
         "if ($version -lt '3.0.0') { Remove-Item -Recurse -Force $dir; throw 'Please use \"rez2\" package for rez versions lower than 3.0.0' }"

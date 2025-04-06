@@ -27,7 +27,7 @@ It is possible to install a separate version of rez-2
 
 ```pwsh
 scoop bucket add scoop-play https://github.com/MichaelHaussmann/scoop-play
-scoop install scoop-play/rez
+scoop install scoop-play/rez2
 ```
 
 It will be usable with a `rez2` command.

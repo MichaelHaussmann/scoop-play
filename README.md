@@ -28,14 +28,14 @@ The installations are not production proof. It is merely to play around with a l
 The installer will call `python3`.
 Whatever python version is run for `python3` will become the REZ install python version.
 
-If needed install a specific python version before installing REZ: 
+If needed install a specific python version before installing REZ:
 
 ```pwsh
 scoop bucket add versions
 scoop install versions/python311
 ```
 
-## Result 
+## Result
 
 ```pwsh
 rez -V

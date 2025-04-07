@@ -1,4 +1,4 @@
-# Scoop Bucket for [REZ](https://rez.readthedocs.io)
+# Scoop Bucket for [rez](https://rez.readthedocs.io)
 
 <!-- Uncomment the following line after replacing placeholders -->
 [![Tests](https://github.com/MichaelHaussmann/scoop-play/actions/workflows/ci.yml/badge.svg)](https://github.com/MichaelHaussmann/scoop-play/actions/workflows/ci.yml) [![Excavator](https://github.com/MichaelHaussmann/scoop-play/actions/workflows/excavator.yml/badge.svg)](https://github.com/MichaelHaussmann/scoop-play/actions/workflows/excavator.yml)
@@ -16,19 +16,19 @@ scoop bucket add play https://github.com/MichaelHaussmann/scoop-play
 scoop install play/rez
 ```
 
-This will install REZ as a scoop app.
+This will install rez as a scoop app.
 
 ### Notes
 
-The installed rez can coexist with another installation, it uses the commands `rez` (if usable), `rez3` (or `rez2` for the rez-2 version).
-The installations are not production proof. It is merely to play around with a local installation of rez.
+The installed rez can coexist with another installation, usable with commands `rez` and `rez3`.<br>
+The installations are not production proven. It is merely to play around with a local installation of rez.
 
 ## Python version
 
-The installer will call `python3`.
-Whatever python version is run for `python3` will become the REZ install python version.
+The installer will call `python3`.<br>
+Whatever python version is run for `python3` will become res's python version.<br>
 
-If needed install a specific python version before installing REZ:
+If needed, install a specific python version before installing rez, for example:
 
 ```pwsh
 scoop bucket add versions
@@ -39,15 +39,16 @@ scoop install versions/python311
 
 ```pwsh
 rez -V
-Rez 3.2.1 from ~\scoop\apps\rez\3.2.1\install\Lib\site-packages\rez (python 3.11)
+Rez 3.2.1 from <scoop-install-path>\scoop\apps\rez\3.2.1\install\Lib\site-packages\rez (python 3.11)
 
 rez3 -V
-Rez 3.2.1 from ~\\scoop\apps\rez\3.2.1\install\Lib\site-packages\rez (python 3.11)
+Rez 3.2.1 from <scoop-install-path>\scoop\apps\rez\3.2.1\install\Lib\site-packages\rez (python 3.11)
 ```
 
-## Rez2
+## Rez-2
 
-It is possible to install a separate version of rez-2
+It is possible to install a separate version of rez-2, usable with commands `rez2`.<br>
+This version is just for testing purposes.
 
 ```pwsh
 scoop bucket add play https://github.com/MichaelHaussmann/scoop-play
@@ -57,13 +58,8 @@ scoop install play/rez2
 It will be usable with a `rez2` command.
 ```
 rez2 -V
-Rez 2.114.0 from ~\scoop\apps\rez\2.112.0\install\Lib\site-packages\rez (python 3.11)
+Rez 2.114.0 from <scoop-install-path>\scoop\apps\rez\2.112.0\install\Lib\site-packages\rez (python 3.11)
 ```
-
-
-## Todo
-
-- to be indexed on `https://scoop.sh`, add the topic `scoop-bucket` to your repository.
 
 ## How do I contribute new manifests?
 

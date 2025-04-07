@@ -56,14 +56,10 @@ scoop install play/rez2
 ```
 
 It will be usable with a `rez2` command.
-```
+
+```pwsh
 rez2 -V
 Rez 2.114.0 from <scoop-install-path>\scoop\apps\rez\2.112.0\install\Lib\site-packages\rez (python 3.11)
 ```
 
-## How do I contribute new manifests?
 
-To make a new manifest contribution, please read the [Contributing
-Guide](https://github.com/ScoopInstaller/.github/blob/main/.github/CONTRIBUTING.md)
-and [App Manifests](https://github.com/ScoopInstaller/Scoop/wiki/App-Manifests)
-wiki page.
